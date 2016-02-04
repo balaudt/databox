@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0.3//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.0.3/distro-source/core/src/gwt-module.dtd">
+<module rename-to="goddess">
+	<inherits name="com.google.gwt.user.User" />
+	<inherits name='com.google.gwt.i18n.I18N' />
+	<inherits name="org.sagarius.radix.Radix" />
+	<inherits name="com.google.gwt.gdata.GDataExt" />
+	<inherits name="org.restlet.Restlet" />
+	<inherits name='com.google.gwt.visualization.Visualization' />
+	<inherits name='com.googlecode.gwt.crypto.Crypto' />
+	<inherits name='com.google.gwt.query.Query' />
+	<source path="client" />
+	<source path="shared" />
+	<entry-point class="com.sagarius.goddess.client.MultipleEntryPoint" />
+</module>

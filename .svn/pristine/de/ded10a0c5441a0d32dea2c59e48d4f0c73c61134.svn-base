@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/DTD/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Databox</title>
+<script type="text/javascript" language="javascript"
+	src="goddess/goddess.nocache.js"></script>
+<LINK rel="stylesheet" type="text/css"
+	href="goddess/css/gwt/standard.css">
+<LINK rel="stylesheet" type="text/css" href="goddess/css/ie.css">
+<link href="goddess/css/print.css" media="print" type="text/css"
+	rel="stylesheet">
+<LINK rel="stylesheet" type="text/css" href="radix/GWTCProgress.css">
+<LINK rel="stylesheet" type="text/css" href="goddess/css/screen.css">
+<LINK rel="stylesheet" type="text/css" href="goddess/css/standard.css">
+<LINK rel="stylesheet" type="text/css" href="goddess/css/buttons.css">
+<LINK rel="stylesheet" type="text/css" href="goddess/css/forms.css">
+<LINK rel="stylesheet" type="text/css" href="goddess/css/navbar.css">
+<LINK rel="stylesheet" type="text/css" href="goddess/css/default.css">
+<script type="text/javascript" src="radix/taffy-min.js"></script>
+<script type="text/javascript" src="radix/table.js"></script>
+<style type="text/css">
+.table-sortable {
+	background: url("radix/01_unsorted.gif") no-repeat scroll right center
+		transparent;
+}
+
+.table-sorted-asc {
+	background: url("radix/01_ascending.gif") no-repeat scroll right center
+		transparent;
+}
+
+.table-sorted-desc {
+	background: url("radix/01_descending.gif") no-repeat scroll right center
+		transparent;
+}
+</style>
+</head>
+<body>
+<iframe id="__printingFrame" style="width: 0; height: 0; border: 0;"></iframe>
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+	style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+<DIV class="outer-container container_shadow_top" id="outer-container"
+	style="display: none;"><img src="goddess/images/single.png"
+	style="display: none;"></DIV>
+<div id="footer" class="container footer" style="display: none;">&copy;
+Sagarius Software Solutions 2010</div>
+</body>
+</html>

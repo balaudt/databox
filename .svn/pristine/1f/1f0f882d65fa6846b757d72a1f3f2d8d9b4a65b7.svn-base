@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="radix/table.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>test</title>
+<script type="text/javascript" language="javascript"
+	src="radix/radix.nocache.js"></script>
+<style type="text/css">
+.table-sortable {
+	background: url('radix/01_unsorted.gif') no-repeat right;
+}
+
+.table-sorted-asc {
+	background: url('radix/01_ascending.gif') no-repeat right;
+}
+
+.table-sorted-desc {
+	background: url('radix/01_descending.gif') no-repeat right;
+}
+</style>
+</head>
+<LINK rel="stylesheet" type="text/css" href="GWTCProgress.css">
+<body>
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+	style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE queue-entries SYSTEM "queue.dtd" > -->
+<queue-entries>
+	<queue>
+		<name>smsqueue</name>
+		<rate>50/s</rate>
+		<bucket-size>50</bucket-size>
+	</queue>
+	<queue>
+		<name>examqueue</name>
+		<rate>50/s</rate>
+		<bucket-size>50</bucket-size>
+	</queue>
+	<queue>
+		<name>attqueue</name>
+		<rate>50/s</rate>
+		<bucket-size>50</bucket-size>
+	</queue>
+</queue-entries>

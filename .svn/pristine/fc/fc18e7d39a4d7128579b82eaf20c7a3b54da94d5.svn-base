@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="MultivalueSuggestBoxExample.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Multivalue SuggestBox using REST</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="radix/radix.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <h1>Browsable Multivalue SuggestBox Using REST</h1>
+
+    <p>Enter different Crayola crayon colors in the text box either by
+    <ul>
+    <li>typing a few letters at a time and selecting from the suggestions popup</li>
+    <li>or by copying and pasting using the keyboard (Ctrl-C and Ctrl-V) the following string including the last trailing comma: carn, banana, red, blue green, almond, yellow orange, </li>
+    <li>or by typing '*' to browse</li>
+    <li>or using any combination of the above.</li>
+    </ul>
+    Then click the 'Show Values' buttons to see the Hex codes for the colors selected.
+    </p>
+    <div id="multivalueFieldContainer"></div>
+    <div id="sendButtonContainer"></div>
+    <p>
+    <div id="valuesContainer"></div>
+    <div id="valueMapContainer"></div>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<!-- Indices written at Thu, 7 Oct 2010 06:08:56 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Member" ancestor="false" source="auto">
+        <property name="schoolId" direction="asc"/>
+        <property name="type" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

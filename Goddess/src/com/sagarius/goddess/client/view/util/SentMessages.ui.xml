@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<!-- Main panel -->
+	<g:HTMLPanel>
+		<g:Anchor ui:field="newLink" styleName="fr" href="javascript:"></g:Anchor>
+		<g:Label styleName="h13 strong clear" ui:field="titleLabel"></g:Label>
+		<g:Anchor ui:field="newsms" styleName="fr pr10"></g:Anchor>
+		<hr class="space" />
+		<g:DeckPanel ui:field="decker">
+			<g:Image url="/goddess/images/gadget-load.gif" styleName="image clear"
+				ui:field="loadImage"></g:Image>
+			<g:FlexTable ui:field="mainTable" styleName="table-preset-2"></g:FlexTable>
+		</g:DeckPanel>
+		<g:Image ui:field="previousButton" styleName="fl"
+			url="/goddess/images/resultset_previous.png"></g:Image>
+		<g:Image ui:field="nextButton" styleName="fr"
+			url="/goddess/images/resultset_next.png"></g:Image>
+		<hr class="space" />
+		<hr />
+		<hr class="space" />
+	</g:HTMLPanel>
+</ui:UiBinder> 

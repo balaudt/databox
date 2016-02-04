@@ -1,0 +1,177 @@
+  /* -------------------------------------------------------------- 
+  
+   buttons.css
+   * Gives you some great CSS-only buttons.
+   
+   Created by Kevin Hale [particletree.com]
+   * particletree.com/features/rediscovering-the-button-element
+
+   See Readme.txt in this folder for instructions.
+
+-------------------------------------------------------------- */
+
+.gbutton {
+	-moz-border-radius:      3px;
+	-webkit-border-radius:   3px;
+	background:              white url(../images/button.png) 0 0 repeat-x; /* Image fallback */
+	background:             -moz-linear-gradient(0% 170% 90deg, #c4c4c4, white);
+	background:             -webkit-gradient(linear, 0% 0%, 0% 170%, from(white), to(#c4c4c4));
+	border:                  1px solid;
+	border-color:            #e6e6e6 #cccccc #cccccc #e6e6e6;
+	border-radius:           3px;
+	color:                   #404040;
+	display:                 inline-block;
+	font-family:            "helvetica neue", helvetica, arial, freesans, "liberation sans", "numbus sans l", sans-serif;
+	font-size:               12px;
+	outline                  0;
+	padding-top:			 4px;
+	padding-bottom:			 4px;
+	padding-left:			 8px;
+	padding-right:			 8px;
+	text-align:              center;
+	text-decoration:         none;
+	text-shadow:             1px 1px 0 white; 
+	white-space:             nowrap; 
+}
+
+.gbutton:hover {
+    background:           -moz-linear-gradient(0% 170% 90deg, #b8b8b8, white);
+    background:           -webkit-gradient(linear, 0% 0%, 0% 170%, from(white), to(#b8b8b8));
+    border-color:          #99ccff;
+    color:                 #333333; 
+}
+
+.gbutton:active {
+    position:              relative;
+    top:                   1px; 
+}
+
+.gbutton:active, .gbutton:focus {
+    background-position:   0 -25px;
+    background:           -moz-linear-gradient(0% 170% 90deg, white, #dedede);
+    background:           -webkit-gradient(linear, 0% 0%, 0% 170%, from(#dedede), to(white));
+    border-color:          #8fc7ff #94c9ff #94c9ff #8fc7ff;
+    color:                 #1a1a1a;
+    text-shadow:           1px -1px 0 rgba(255, 255, 255, 0.5); 
+}
+
+.gbutton, .gbutton:focus, .gbutton:hover, .gbutton:active {
+ 	border: 1px solid; 
+}
+
+/* large */
+.gbutton.large {
+	font-size: 18px;
+    padding: 8px 14px 9px;
+    font-weight: bold;
+    background-image: white;
+    background: -moz-linear-gradient(0% 170% 90deg, #c4c4c4, white);
+    background: -webkit-gradient(linear, 0% 0%, 0% 170%, from(white), to(#c4c4c4)); 
+}
+.gbutton.large:active, .gbutton.large:focus {
+	background: -moz-linear-gradient(0% 170% 90deg, white, #dedede);
+    background: -webkit-gradient(linear, 0% 0%, 0% 170%, from(#dedede), to(white)); 
+}
+/* shadow */
+.gbutton.shadow {
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+}
+.gbutton.shadow:hover {
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+}
+.gbutton.shadow:active {
+	-box-shadow: 0 0 7px yellow;
+    -webkit-box-shadow: 0 0 7px yellow;
+	-moz-box-shadow: 0 0 7px yellow; 
+}
+/* pillbox */
+
+.gbutton.pillbox {
+	position: relative;
+    margin: 0; 
+}
+.gbutton.pillbox:hover {
+	z-index: 10; 
+}
+.gbutton.pillbox:active {
+	top: 0; 
+}
+.gbutton.pillbox-l {
+	border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0; 
+}
+.gbutton.pillbox-m {
+	border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    margin: 0 -4px; 
+}
+.gecko .gbutton.pillbox-m {
+	margin: 0 -4px 0 -3px; 
+}
+.gbutton.pillbox-r {
+	border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+}
+.gbutton.join-l {
+	margin-left: -1px;	
+}
+.gbutton.join-r {
+	margin-right: -4px;	
+}
+
+/* multi */
+.gbutton.multi {
+	line-height: 1.15; 
+}
+/* round */
+.gbutton.rounder {
+	border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    padding: 5px 15px; 
+}
+
+/* gbutton with 16px img inside a tag */
+.gbutton img {
+	float: left;
+	margin-right: 6px;
+}
+.gbutton.icon img {
+	margin-left: 6px;
+}
+/* todo: .gbutton opera browser support */
+
+/* disabled button */
+button.gbutton[disabled], button.gbutton[disabled]:hover {
+    background-position:   0 -25px;
+    background:           -moz-linear-gradient(0% 170% 90deg, white, #dedede);
+    background:           -webkit-gradient(linear, 0% 0%, 0% 170%, from(#dedede), to(white));
+    color:                 #333333;
+    text-shadow:           1px -1px 0 rgba(255, 255, 255, 0.5); 
+}
+button.gbutton:active {
+	position:relative;
+	top: 3px;
+}
+button.gbutton {
+	margin-bottom: 3px;
+}
+button.gbutton:hover {
+	color: #000000;
+}
+button.gbutton.pillbox:active {
+	top: 3px;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.password-div {
+			padding-left: 24px;
+			padding-top: 15px;
+		}
+		
+		.login-button {
+			float: none;
+			margin-top: 20px;
+			margin-left: 220px;
+		}
+		
+		.request-button {
+			float: none;
+			margin-left: 220px;
+			margin-top: 18px;
+		}
+		
+		.emailAddress {
+			color: #3399ff;
+		}
+		
+		.portal {
+			margin-top: 54px;
+		}
+		
+		.mobile {
+			padding-top: 58px;
+			padding-left: 24px;
+		}
+		
+		.login-box {
+			background: url(goddess/images/bg-login.jpg) no-repeat;
+		}
+		
+		.request-mobile-div {
+			padding-top: 100px;
+			padding-left: 24px;
+		}
+		
+		.admin-login {
+			padding-top: 18px;
+		}
+	</ui:style>
+	<g:FlowPanel styleName="login-body">
+		<g:FlowPanel styleName="left-col span-16">
+			<g:HTML>
+				<div styleName="school-name prepend-1"
+					style="font-size:24px; font-family:Georgia, &#39;Times New Roman&#39;, Times, serif;"
+					ui:field="schoolName"></div>
+				<!-- end school-name -->
+				<div ui:field="schoolAddress" styleName="school-address prepend-1"
+					style="margin-left:10px; font-size:14px;font-family:Georgia, &#39;Times New Roman&#39;, Times, serif;" />
+			</g:HTML>
+			<!--end school-address -->
+			<g:FlowPanel styleName="help-information prepend-3 append-2 {style.portal}">
+				<g:FlowPanel styleName="heading text-preset-3">
+					<g:HTML>Student Information Portal</g:HTML>
+				</g:FlowPanel>
+				<!-- end heading -->
+				<g:FlowPanel styleName="some-content text-preset-1 mb2">
+					<g:HTML>
+						<P>Here you could see your child’s performance. Every parent who
+							has registered their mobile number with the school can access
+							this
+							system. </P>
+						<P>For further instructions refer below. To register your mobile
+							number, please provide a written request to the school.</P>
+					</g:HTML>
+				</g:FlowPanel>
+				<!--end some-content -->
+				<g:FlowPanel styleName="heading-2 text-preset-4">
+					<g:HTML>
+						Instructions</g:HTML>
+				</g:FlowPanel>
+				<!-- end heading-2 -->
+				<g:FlowPanel styleName="heading-3 text-preset-5">
+					<g:HTML>Request Password:</g:HTML>
+				</g:FlowPanel>
+				<!-- end heading-3 -->
+				<g:FlowPanel styleName="some-content text-preset-1 mb2">
+					<g:HTML>
+						<P>Enter the mobile number registered at the school at the request
+							passoword field and click submit. New password will be sent to
+							your mobile number through SMS. Now you could use the mobile
+							number as ‘Username’ and the pin number sent as the ‘Password’ to
+							login to your account.</P>
+					</g:HTML>
+				</g:FlowPanel>
+				<!--end some-content -->
+				<g:FlowPanel styleName="clearfix text-preset-5">
+					<g:HTML>
+						Parent’s Login</g:HTML>
+				</g:FlowPanel>
+				<!-- end clearfix -->
+				<g:FlowPanel styleName="clearfix text-preset-1 mb2">
+					<g:HTML>
+						<P styleName="mb18">Once you have got the ‘Username’ and ‘Password’,
+							you
+							could use it to login to your account. You will be given
+							access to
+							your child’s performance.</P>
+						<p ui:field="contactPara" />
+					</g:HTML>
+				</g:FlowPanel> <!--end clearfix -->
+			</g:FlowPanel>
+			<!--end help-information -->
+		</g:FlowPanel>
+		<!--end left-col -->
+		<g:FlowPanel styleName="right-col span-8 last mt72">
+			<g:FlowPanel styleName="login-box {style.login-box}">
+				<g:FlowPanel styleName="username">
+					<g:FlowPanel styleName="clearfix {style.mobile}">
+						<g:HTML>
+							Your mobile number here:</g:HTML>
+					</g:FlowPanel>
+					<g:TextBox ui:field="username"></g:TextBox>
+				</g:FlowPanel>
+				<!-- end username -->
+				<g:FlowPanel styleName="password">
+					<g:FlowPanel styleName="clearfix {style.password-div}">
+						<g:HTML>Your password here:</g:HTML>
+					</g:FlowPanel>
+					<g:PasswordTextBox ui:field="password" />
+					<g:Button ui:field="loginButton" styleName="{style.login-button}"
+						text="Login"></g:Button>
+					<g:FlowPanel styleName="clearfix">
+						<g:Anchor ui:field="forgotButton" href="javascript:"
+							text="Forgot password?"></g:Anchor>
+					</g:FlowPanel><!--end clearfix -->
+				</g:FlowPanel>
+				<!-- end password -->
+				<g:FlowPanel styleName="request-pass">
+					<g:FlowPanel styleName="clearfix {style.request-mobile-div}">
+						<g:HTML> Your mobile number here:</g:HTML>
+					</g:FlowPanel>
+					<g:TextBox ui:field="requestText"></g:TextBox>
+					<g:Button ui:field="requestButton" styleName="{style.request-button}"
+						text="Submit"></g:Button>
+					<g:HTML styleName="clearfix">&nbsp;</g:HTML>
+				</g:FlowPanel>
+				<!-- end request-pass -->
+				<g:FlowPanel styleName="admin-login {style.admin-login}"
+					ui:field="adminLogin">
+
+				</g:FlowPanel><!--end admin-login -->
+			</g:FlowPanel>
+			<!--end login-box -->
+		</g:FlowPanel>
+		<!-- end right-col -->
+	</g:FlowPanel>
+	<!-- end login-body -->
+</ui:UiBinder>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+	<application>data-box</application>
+	<version>2-10b</version>
+
+	<!-- Configure serving/caching of GWT files -->
+	<static-files>
+		<include path="**" />
+		<include path="/**.ico"></include>
+		<include path="/**.html" expiration="7d" />
+		<include path="/**.css" expiration="7d" />
+		<include path="/**.js" expiration="7d" />
+		<include path="/**.png" expiration="7d" />
+		<include path="/**.jpg" expiration="7d" />
+		<include path="/**.gif" expiration="7d" />
+		<include path="**.nocache.*" expiration="0s" />
+		<include path="**.cache.*" expiration="365d" />
+		<exclude path="**.gwt.rpc" />
+	</static-files>
+
+	<!-- Configure java.util.logging -->
+	<system-properties>
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
+		<property name="sms.username" value="sagarius"></property>
+		<property name="sms.password" value="out@Club8"></property>
+		<property name="sms.senderid" value="test"></property>
+	</system-properties>
+	<sessions-enabled>true</sessions-enabled>
+</appengine-web-app>

@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.loadingPanel {
+			width: auto !important;
+			height: auto !important;
+			text-align: center !important;
+			min-height: 100px !important;
+		}
+	</ui:style>
+	<!-- Main panel -->
+	<g:FlowPanel>
+		<!-- Title panel -->
+		<g:FlowPanel>
+			<g:HTML ui:field="title" styleName="fl"></g:HTML>
+			<!-- <g:FlowPanel styleName="fr"> -->
+			<!-- <g:Image ui:field="refresh" styleName="fl" -->
+			<!-- url="/goddess/images/refresh.png"></g:Image> -->
+			<!-- <g:Image ui:field="close" styleName="fl" -->
+			<!-- url="/goddess/images/cross.png"></g:Image> -->
+			<!-- </g:FlowPanel> -->
+		</g:FlowPanel>
+
+		<!-- Empty header panel -->
+		<g:FlowPanel ui:field="header"></g:FlowPanel>
+
+		<!-- Content decker -->
+		<g:DeckPanel ui:field="contentDecker">
+			<g:FlowPanel styleName="clear fl {style.loadingPanel}">
+				<g:Image url="/goddess/images/gadget-load.gif" styleName="image clear"></g:Image>
+			</g:FlowPanel>
+			<g:FlowPanel ui:field="contentsPanel" styleName="fl">
+			</g:FlowPanel>
+		</g:DeckPanel>
+
+		<!-- Control panel -->
+		<!-- Add buttons with mr4 class -->
+		<g:HorizontalPanel styleName="clear" width="auto">
+			<!-- Static controls -->
+			<g:FlowPanel styleName="clear related-links fl">
+				<g:Anchor ui:field="refreshButton" styleName="mr4 icon-16-arrow_refresh"
+					text="Refresh" href="javascript:"></g:Anchor>
+			</g:FlowPanel>
+			<g:FlowPanel ui:field="controlsPanel" styleName="clear related-links"></g:FlowPanel>
+		</g:HorizontalPanel>
+		<g:FlowPanel ui:field="footer" styleName="clear"></g:FlowPanel>
+		<!-- Status panel -->
+		<g:FlowPanel ui:field="statusPanel" styleName="fl clear mt10">
+			<g:HTML ui:field="statusMessage" styleName="strong h12"></g:HTML>
+		</g:FlowPanel>
+	</g:FlowPanel>
+</ui:UiBinder> 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="META-INF/|log4j.properties" kind="src" path="radix-src"/>
+	<classpathentry excluding="META-INF/|log4j.properties" kind="src" path="gdata-src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/org.restlet.ext.servlet.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/org.restlet.gwt.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/org.restlet.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jopenid-1.07.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/appengine-utils-client-1.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/appengine-utils-server-1.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-client-1.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-client-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-core-1.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-docs-3.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-docs-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-media-1.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-photos-2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-photos-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-spreadsheet-3.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gdata-spreadsheet-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guava-r04.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-beans-binding-0.3.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-gdata.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwtx-1.5.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/json_simple-1.1.jar" sourcepath="/media/bala/lib_srcs/json_simple-1.1"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jsr305.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-visualization.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/icu4j-4_0_1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/visualization-datasource-1.0.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-crypto-1.0.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwtquery-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
